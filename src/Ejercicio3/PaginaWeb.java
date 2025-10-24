@@ -1,3 +1,4 @@
+package Ejercicio3;
 
 class PaginaWeb {
     String url;

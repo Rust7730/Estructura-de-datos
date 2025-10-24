@@ -1,3 +1,4 @@
+package Ejercicio3;
 
 public class HistorialNavegacion {
 
@@ -71,7 +72,9 @@ public class HistorialNavegacion {
     public void mostrarHistorialCompleto() {
         System.out.println("--- Historial Completo (De más antiguo a más nuevo) ---");
         PaginaWeb temp= this.head;
+
         while (temp!=null) {
+
             System.out.println(temp.getDetalles());
             temp = temp.siguiente;
         }
@@ -110,7 +113,6 @@ public class HistorialNavegacion {
     public void limpiarHistorial() {
         this.head = null;
         this.tail = null;
-        this.paginaActual = null;
         this.tamanoActual = 0;
         System.out.println("Historial borrado.");
     }
